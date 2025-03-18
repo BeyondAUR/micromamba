@@ -1,28 +1,27 @@
 pkgbase = micromamba
-	pkgdesc = C++ tiny version of mamba, the fast conda package installer
-	pkgver = 1.5.8
-	pkgrel = 2
+	pkgdesc = The fast cross-platform package manager
+	pkgver = 2.0.7
+	pkgrel = 1
 	url = https://github.com/mamba-org/mamba
 	arch = i686
 	arch = x86_64
 	license = BSD-3-Clause
-	makedepends = cmake
 	makedepends = cli11
-	makedepends = pybind11
 	makedepends = spdlog
-	makedepends = nlohmann-json
-	makedepends = python-pip
 	makedepends = tl-expected
-	makedepends = gtest
-	depends = libarchive
-	depends = curl
-	depends = libsolv
+	makedepends = nlohmann-json
+	makedepends = cmake
+	makedepends = pybind11
+	depends = python
 	depends = fmt
-	depends = yaml-cpp
+	depends = libsolv
 	depends = reproc
-	provides = libmamba
+	depends = yaml-cpp
+	depends = simdjson
+	provides = libmamba=2.0.7
+	provides = python-libmambapy=2.0.7
 	conflicts = micromamba-bin
-	source = micromamba-1.5.8.tar.gz::https://github.com/mamba-org/mamba/archive/refs/tags/2024.03.25.tar.gz
-	md5sums = fe28d77d0cae57dde82a2f4fea360e9e
+	source = micromamba-2.0.7.tar.gz::https://github.com/mamba-org/mamba/archive/2.0.7.tar.gz
+	sha512sums = d55015204cd9e05f51150619065689cbdb0b9a876398ca735f662f6e390f8a4e6089c4f833c0ca36510dd266917047aba4ff20bd8794948398ae9920ff12a1d7
 
 pkgname = micromamba
