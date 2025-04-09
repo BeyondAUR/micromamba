@@ -1,6 +1,6 @@
 pkgbase = micromamba
 	pkgdesc = The fast cross-platform package manager
-	pkgver = 2.0.8
+	pkgver = 2.1.0
 	pkgrel = 1
 	url = https://github.com/mamba-org/mamba
 	arch = i686
@@ -18,10 +18,10 @@ pkgbase = micromamba
 	depends = reproc
 	depends = yaml-cpp
 	depends = simdjson
-	provides = libmamba=2.0.8
-	provides = python-libmambapy=2.0.8
+	provides = libmamba=2.1.0
+	provides = python-libmambapy=2.1.0
 	conflicts = micromamba-bin
-	source = micromamba-2.0.8.tar.gz::https://github.com/mamba-org/mamba/archive/2.0.8.tar.gz
-	sha512sums = 88cb599a431f0859b2a60178f2b0c97291f9b6922c2bd720d2fcf723f20352ade2bc96c49ba108d29e541750e3729bf1acf7524e0c3d8679f56b07d9f58ffe43
+	source = micromamba-2.1.0.tar.gz::https://github.com/mamba-org/mamba/archive/2.1.0.tar.gz
+	sha512sums = ba8ee8fee6cd698775ced7b9893eb3d49192241e4da84f31a6fe92a85b31508b4e6c910ab45049a540b6bd4a371b8e799745bc51bdc2ec7db0e7ef0e83dd47ce
 
 pkgname = micromamba
