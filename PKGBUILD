@@ -2,7 +2,7 @@
 # Contributor: Guillaume Dolle  <dev at gdolle.com>
 pkgname=micromamba
 _pkgname=${pkgname/micro/}
-pkgver=2.1.0
+pkgver=2.1.1
 pkgrel=1
 pkgdesc="The fast cross-platform package manager"
 arch=(i686 x86_64)
@@ -11,7 +11,7 @@ license=(BSD-3-Clause)
 depends=(python fmt libsolv reproc yaml-cpp simdjson)
 makedepends=(cli11 spdlog tl-expected nlohmann-json cmake pybind11) # gtest
 source=(${pkgname}-${pkgver}.tar.gz::${url}/archive/${pkgver}.tar.gz)
-sha512sums=('ba8ee8fee6cd698775ced7b9893eb3d49192241e4da84f31a6fe92a85b31508b4e6c910ab45049a540b6bd4a371b8e799745bc51bdc2ec7db0e7ef0e83dd47ce')
+sha512sums=('99777c9711af0f36731aa3be9fd89cd730ab1878d4c9485fb0d5d39464ee13e29d6e8a5f4ecb4cbb0149c9a2962d91cb212e9a052536283b46a9e1776ed6899f')
 provides=("libmamba=${pkgver}" "python-libmambapy=${pkgver}")
 conflicts=('micromamba-bin')
 
