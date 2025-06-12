@@ -1,7 +1,7 @@
 pkgbase = micromamba
 	pkgdesc = The fast cross-platform package manager
 	pkgver = 2.2.0
-	pkgrel = 2
+	pkgrel = 3
 	url = https://github.com/mamba-org/mamba
 	arch = i686
 	arch = x86_64
@@ -19,7 +19,8 @@ pkgbase = micromamba
 	depends = reproc
 	depends = yaml-cpp
 	depends = simdjson
-	provides = libmamba=4.0.0
+	provides = libmamba=2.2.0
+	provides = libmambapy=2.2.0
 	conflicts = micromamba-bin
 	source = micromamba-2.2.0.tar.gz::https://github.com/mamba-org/mamba/archive/2.2.0.tar.gz
 	source = static-off.patch

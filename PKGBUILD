@@ -47,8 +47,8 @@ conflicts=(
 
 prepare() {
   cd ${_pkgname}-${pkgver}
-  patch -p0 -i ../../static-off.patch
-  patch -p0 -i ../../utils.cpp.patch
+  patch -p0 -i "${srcdir}/static-off.patch"
+  patch -p0 -i "${srcdir}/utils.cpp.patch"
 }
 
 build() {
