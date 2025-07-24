@@ -56,6 +56,7 @@ check() {
 }
 
 package() {
+    cd "${srcdir}/${_pkgname}-${pkgver}"
     # Install main components (C++ library, executables, headers)
     DESTDIR="${pkgdir}" cmake --build build --target install
 }
