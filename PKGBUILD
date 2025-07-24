@@ -45,7 +45,7 @@ build() {
     -D CMAKE_BUILD_TYPE=Release \
     -D BUILD_LIBMAMBA=ON \
     -D BUILD_MICROMAMBA=ON \
-    -D BUILD_STATIC=ON \
+    -D BUILD_STATIC=ON
   cmake --build build/
 }
 
