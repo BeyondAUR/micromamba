@@ -5,7 +5,7 @@
 # Rewriter: Evan Greenup: Now the content in here is quite different from previous share build of micromamba on AUR. It is not statically build and not include libmambapy.
 
 pkgname=micromamba
-_pkgname=${pkgname/micro/}
+_pkgname=${mamba}
 pkgver=2.3.0
 pkgrel=2
 pkgdesc="The fast cross-platform package manager"
@@ -46,7 +46,7 @@ build() {
     -D BUILD_LIBMAMBA=ON \
     -D BUILD_MICROMAMBA=ON \
     -D BUILD_STATIC=ON \
-  cmake --build build --parallel $(nproc)
+  cmake --build build/
 }
 
 check() {
